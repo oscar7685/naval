@@ -411,7 +411,6 @@ function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvi
 
     // Generates a resolve object previously configured in constant.JS_REQUIRES (config.constant.js)
     function loadSequence() {
-        console.log("Cargando sequence!!");
         var _args = arguments;
         return {
             deps: ['$ocLazyLoad', '$q',

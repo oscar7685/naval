@@ -9,127 +9,130 @@
     </div>
 </section>
 <!-- end: PAGE TITLE -->
-<!-- start: BASIC EXAMPLE -->
+<!-- start: FIELDSET -->
 <div class="container-fluid container-fullw bg-white">
     <div class="row">
         <div class="col-md-12">
-            <h5 class="over-title margin-bottom-15">Basic <span class="text-bold">example</span></h5>
-            <p>
-                Individual form controls automatically receive some global styling.
-            </p>
-            <div class="row margin-top-30">
-                <div class="col-lg-12 col-md-12">
-                    <div class="panel panel-white">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">Default Form</h5>
-                        </div>
-                        <div class="panel-body">
-                            <p class="text-small margin-bottom-20">
-                                All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.
-                            </p>
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="nombre">
-                                        Nombre Aula
-                                    </label>
-                                    <input type="text" placeholder="Nombre Aula" id="nombre" class="form-control">
+            <form id="FcrearAula">
+                <div class="row">
+                    <div class="col-md-6">
+                        <fieldset>
+                            <legend>
+                                Aulas
+                            </legend>
+                            <div class="form-group">
+                                <label for="nombre">
+                                    Nombre Aula
+                                </label>
+                                <input type="text" placeholder="Nombre Aula" id="nombre" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo_aula">
+                                    Tipo Aula
+                                </label>
+                                <select id="tipo_aula" class="form-control">
+                                    <option value="">&nbsp;</option>
+                                    <option value="Aula">Aula</option>
+                                    <option value="Lab">Laboratorio</option>
+                                    <option value="Aud">Auditorio</option>
+                                    <option value="Aesp">Aula especializada</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="capacidad">
+                                    Capacidad (# Alumnos)
+                                </label>
+                                <input type="number" placeholder="Capacidad" id="capacidad" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="estado">
+                                    Estado
+                                </label>
+                                <select id="estado" class="form-control">
+                                    <option value="">&nbsp;</option>
+                                    <option value="Activa">Activa</option>
+                                    <option value="ActivaNovedad">Activa con Novedad</option>
+                                    <option value="Inactiva">Inactiva</option>
+                                </select>
+                            </div>
+                            <div class="checkbox clip-check check-primary">
+                                <input type="checkbox" id="capacidad_audiovisual"/>
+                                <label for="capacidad_audiovisual">
+                                    Capacidad Audiovisual
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <legend>
+                                Ubicación del aula
+                            </legend>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="edificio">
+                                            Edificio
+                                        </label>
+                                        <select id="edificio" class="form-control">
+                                            <option value="">&nbsp;</option>
+                                            <option value="Co">Comando</option>
+                                            <option value="Re">Reyes</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="piso">
+                                            Piso
+                                        </label>
+                                        <select id="piso" class="form-control">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="edificio">
-                                        Edificio
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>
+                                Materiales
+                            </legend>
+                            <div class="form-group">
+                                <div class="checkbox clip-check check-primary">
+                                    <input type="checkbox" id="tablero"/>
+                                    <label for="tablero">
+                                        Tablero
                                     </label>
-                                    <select id="edificio" class="form-control">
-                                        <option value="">&nbsp;</option>
-                                        <option value="Co">Comando</option>
-                                        <option value="Re">Reyes</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tipo_aula">
-                                        Tipo Aula
-                                    </label>
-                                    <select id="tipo_aula" class="form-control">
-                                        <option value="">&nbsp;</option>
-                                        <option value="Aula">Aula</option>
-                                        <option value="Lab">Laboratorio</option>
-                                        <option value="Aud">Auditorio</option>
-                                        <option value="Aesp">Aula especializada</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="piso">
-                                        Piso
-                                    </label>
-                                    <select id="piso" class="form-control">
-                                        <option value="">&nbsp;</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="capacidad">
-                                        Capacidad (# Alumnos)
-                                    </label>
-                                    <input type="number" placeholder="Capacidad" id="capacidad" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="estado">
-                                        Estado
-                                    </label>
-                                    <select id="estado" class="form-control">
-                                        <option value="">&nbsp;</option>
-                                        <option value="Activa">Activa</option>
-                                        <option value="ActivaNovedad">Activa con Novedad</option>
-                                        <option value="Inactiva">Inactiva</option>
-                                    </select>
                                 </div>
                                 <div class="checkbox clip-check check-primary">
-                                    <input type="checkbox" id="capacidad_audiovisual"/>
-                                    <label for="capacidad_audiovisual">
-                                        Capacidad Audiovisual
+                                    <input type="checkbox" id="video_beam"/>
+                                    <label for="video_beam">
+                                        Video Beam
                                     </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="materiales">
-                                        Materiales
+                                <div class="checkbox clip-check check-primary">
+                                    <input type="checkbox" id="tv"/>
+                                    <label for="tv">
+                                        Tv
                                     </label>
-                                    <div class="checkbox clip-check check-primary">
-                                        <input type="checkbox" id="tablero"/>
-                                        <label for="tablero">
-                                            Tablero
-                                        </label>
-                                    </div>
-                                    <div class="checkbox clip-check check-primary">
-                                        <input type="checkbox" id="video_beam"/>
-                                        <label for="video_beam">
-                                            Video Beam
-                                        </label>
-                                    </div>
-                                    <div class="checkbox clip-check check-primary">
-                                        <input type="checkbox" id="tv"/>
-                                        <label for="tv">
-                                            Tv
-                                        </label>
-                                    </div>
                                 </div>
-
-                                <button type="submit" class="btn btn-o btn-primary">
-                                    Crear Aula
-                                </button>
-                            </form>
-                        </div>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-o btn-primary">
+                    Crear Aula
+                </button>    
+            </form>
         </div>
     </div>
 </div>
-<!-- end: BASIC EXAMPLE -->
+<!-- end: FIELDSET -->
