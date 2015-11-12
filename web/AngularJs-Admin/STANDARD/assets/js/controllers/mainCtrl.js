@@ -1,6 +1,6 @@
 'use strict';
 /**
- * Clip-Two Main Controller
+ * Naval Main Controller
  */
 app.controller('AppCtrl', ['$rootScope', '$scope', '$state', '$translate', '$localStorage', '$window', '$document', '$timeout', 'cfpLoadingBar',
 function ($rootScope, $scope, $state, $translate, $localStorage, $window, $document, $timeout, cfpLoadingBar) {

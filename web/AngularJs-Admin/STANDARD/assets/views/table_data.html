@@ -79,34 +79,6 @@
 	</div>
 </div>
 <!-- end: PAGINATION TEMPLATE -->
-<!-- start: TABLE WITH SORTING -->
-<div class="container-fluid container-fullw bg-white">
-	<div class="row">
-		<div class="col-md-12">
-			<h5 class="over-title margin-bottom-15">Table <span class="text-bold">with sorting</span></h5>
-			<!-- /// controller:  'ngTableCtrl2' -  localtion: assets/js/controllers/ngTableCtrl.js /// -->
-			<div ng-controller="ngTableCtrl2">
-				<div class="row margin-bottom-10">
-					<div class="col-md-12">
-						<button ng-click="tableParams.sorting({})" class="btn btn-default pull-right">
-							Clear sorting
-						</button>
-					</div>
-				</div>
-				<strong>Sorting:</strong> {{tableParams.sorting()|json}}
-				<table ng-table="tableParams" class="table table-striped">
-					<tr ng-repeat="user in $data">
-						<td data-title="'Name'" sortable="'name'">{{user.name}}</td>
-						<td data-title="'Alias'" sortable="'alias'">{{user.alias}}</td>
-						<td data-title="'Publisher'" sortable="'publisher'">{{user.publisher}}</td>
-						<td data-title="'Gender'" sortable="'gender'">{{user.gender}}</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end: TABLE WITH SORTING -->
 <!-- start: TABLE WITH FILTERS -->
 <div class="container-fluid container-fullw">
 	<div class="row">

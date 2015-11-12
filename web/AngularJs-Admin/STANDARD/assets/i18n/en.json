@@ -65,6 +65,11 @@
                 "CREAR": "Crear Edificio",
                 "LISTAR": "Listar Edificios"
             },
+            "profesores": {
+                "MAIN": "Profesores",
+                "CREAR": "Crear Profesor",
+                "LISTAR": "Listar Profesores"
+            },
             "element": {
                 "MAIN": "UI Elements",
                 "ELEMENTS": "Elements",

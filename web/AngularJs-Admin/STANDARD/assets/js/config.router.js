@@ -82,24 +82,47 @@ app.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', '$com
         }).state('app.edificios', {
             url: '/edificios',
             template: '<div ui-view class="fade-in-up"></div>',
-            title: 'Aulas',
+            title: 'Edificios',
             ncyBreadcrumb: {
-                label: 'Aulas'
+                label: 'Edificios'
             }
         }).state('app.edificios.crear', {
             url: '/crear',
             templateUrl: "assets/views/edificios/crear.html",
-            title: 'Crear Aulas',
+            title: 'Crear Edificios',
             icon: 'ti-layout-media-left-alt',
             ncyBreadcrumb: {
-                label: 'Crear Aulas'
+                label: 'Crear Edificios'
             }
         }).state('app.edificios.listar', {
             url: '/listar',
             templateUrl: "assets/views/edificios/listar.html",
-            title: 'Listar Aulas',
+            title: 'Listar Edificios',
             ncyBreadcrumb: {
-                label: 'Listar Aulas'
+                label: 'Listar Edificios'
+            },
+            resolve: loadSequence('ngTable', 'ngTableCtrl')
+        }).state('app.profesores', {
+            url: '/profesores',
+            template: '<div ui-view class="fade-in-up"></div>',
+            title: 'Profesores',
+            ncyBreadcrumb: {
+                label: 'Profesores'
+            }
+        }).state('app.profesores.crear', {
+            url: '/crear',
+            templateUrl: "assets/views/profesores/crear.html",
+            title: 'Crear Profesores',
+            icon: 'ti-layout-media-left-alt',
+            ncyBreadcrumb: {
+                label: 'Crear Profesores'
+            }
+        }).state('app.profesores.listar', {
+            url: '/listar',
+            templateUrl: "assets/views/profesores/listar.html",
+            title: 'Listar Profesores',
+            ncyBreadcrumb: {
+                label: 'Listar Profesores'
             },
             resolve: loadSequence('ngTable', 'ngTableCtrl')
         }).state('app.ui.buttons', {
